@@ -1,0 +1,28 @@
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    
+    
+}
+.full-screen{
+    font-size: 70px;
+    padding: 50px;
+    border-radius: 10px;
+    border: 5px solid green ;
+    display: block;
+    margin: 0 auto;
+
+}
+@media screen and (max-width: 390px) {
+    .full-screen {
+      font-size: 45px;
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      border: 5px solid green ;
+      display: block;
+      margin: 0 auto;
+    }
+  }

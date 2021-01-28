@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link rel="stylesheet" href="styles.css">
+
     <title>Maroc</title>
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <video id="video" controls></video>
+    <div class="container">
+        <video id="video" controls></video>
+    </div>
+        <button class="full-screen" onclick="openFullscreen()">מסך מלא</button>
+
     <script>
     if(Hls.isSupported())
     {
@@ -28,6 +35,17 @@
             video.play();
         });
     }
+    var elem = document.getElementById("video");
+    function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+
     </script>
 </body>
 </html>
