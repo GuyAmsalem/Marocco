@@ -13,7 +13,13 @@
     border: 5px solid green ;
     display: block;
     margin: 0 auto;
+    font-weight: 600;
+    outline: 0;
 
+}
+.full-screen:hover{
+background-color: aqua;   
+ transition: 0.3s ;
 }
 @media screen and (max-width: 390px) {
     .full-screen {
